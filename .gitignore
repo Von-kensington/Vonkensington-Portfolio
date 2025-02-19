@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Compiled JavaScript files
+*.js
+*.js.map
+
+# Declaration files
+*.d.ts
+
+# TypeScript cache
+.tsbuildinfo
+
+# IDE specific files
+.idea/
+
+# Dependency directories
+node_modules/
