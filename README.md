@@ -2,6 +2,7 @@
 
 ![Portfolio Preview](./assets/portfolio-preview.png)  
 *A personal portfolio showcasing projects, skills, and experience.*
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8545fe05-3f0b-495c-a14a-17068056e16b/deploy-status)](https://app.netlify.com/sites/lambent-eclair-ba1f5d/deploys)
 
 ## 🚀 Live Demo
 🔗 [View Portfolio](https://your-portfolio-link.com)
