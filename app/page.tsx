@@ -2,31 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroParticle from "./components/HeroParticle";
 
-export default function Page() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
-      {/* Background pattern overlay */}
       <HeroParticle />
-      {/* Navigation */}
-      <nav className="bg-black relative z-10 flex justify-between items-center p-6">
-        <div className="text-white text-xl font-medium">Von-Kensington</div>
-        <div className="flex gap-6">
-          <Link
-            href="/Resume.pdf"
-            className="text-[#ededed] hover:text-white transition-colors"
-          >
-            Resume
-          </Link>
-          <Link
-            href="/contact"
-            className="text-[#ededed] hover:text-white transition-colors"
-          >
-            Contact Me
-          </Link>
-        </div>
-      </nav>
-
-      {/* Main content */}
       <main className="relative z-10 container mx-auto px-6 pt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
