@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import silhouete from "../public/Silhouete.png";
 import HeroParticle from "./components/HeroParticle";
 
 export default function Page() {
@@ -13,7 +12,7 @@ export default function Page() {
         <div className="text-white text-xl font-medium">Von-Kensington</div>
         <div className="flex gap-6">
           <Link
-            href="/resume"
+            href="/Resume.pdf"
             className="text-[#ededed] hover:text-white transition-colors"
           >
             Resume
@@ -46,7 +45,7 @@ export default function Page() {
               </p>
             </div>
             <Link
-              href="/resume"
+              href="/Resume.pdf"
               className="inline-block bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-[#ededed] transition-colors"
             >
               Resume
@@ -55,7 +54,8 @@ export default function Page() {
 
           <div className="relative h-[500px] md:h-[600px]">
             <Image
-              src={silhouete}
+              draggable={false}
+              src="/Silhouete.png"
               alt="Profile Silhouette"
               fill
               className="object-contain"
