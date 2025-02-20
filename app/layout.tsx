@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import HeroParticle from "./components/HeroParticle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
         <Navbar />
-        {children}
+
+        <HeroParticle />
+        <div className="min-h-screen relative overflow-hidden">
+          <main className="relative z-10 container mx-auto px-6 pt-20">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
